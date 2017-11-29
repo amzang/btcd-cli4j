@@ -25,9 +25,10 @@ public class WalletApi {
 		client.addMultiSigAddress(3, Arrays.asList(new String[]{"mwMpStsPJUfhRX5FFs8ppU7fWWfhjuKvL4",
 				"myN6xmzRVHvsAEXv4MRzoNsoqNeuispybG", "mpgyUpBSBvVrPewGz26LmXSfRkVpq1tGV3"}), 
 				"jointAccountB");
-		client.backupWallet("G:\\bitplexus\\data\\wallet_backup_28022015.dat");
+//		client.backupWallet("G:\\bitplexus\\data\\wallet_backup_28022015.dat");
+                client.backupWallet("wallet_backup_28022015.dat");
 		client.dumpPrivKey("n2pr9RyfNQdQ6gSWZCX5DGHuHAnNjchAy7");
-		client.dumpWallet("G:\\bitplexus\\data\\wallet_dump_28022015.txt");
+		client.dumpWallet("wallet_dump_28022015.txt");
 		client.encryptWallet("strawberry");
 		client.getAccount("15eXDukpi27y3WwZK7U23zQyTFQboLD2Qr");
 		client.getAccountAddress("firefly");
@@ -53,7 +54,8 @@ public class WalletApi {
 		client.importPrivKey("cU8Q2jGeX3GNKNa5etiC8mgEgFSeVUTRQfWE2ZCzszyqYNK4Mepy");
 		client.importPrivKey("cU8Q2jGeX3GNKNa5etiC8mgEgFSeVUTRQfWE2ZCzszyqYNK4Mepy", "cricket");
 		client.importPrivKey("cU8Q2jGeX3GNKNa5etiC8mgEgFSeVUTRQfWE2ZCzszyqYNK4Mepy", "jackal", true);
-		client.importWallet("G:\\bitplexus\\data\\wallet_dump_28022015.txt");
+//		client.importWallet("G:\\bitplexus\\data\\wallet_dump_28022015.txt");
+                client.importWallet("wallet_dump_28022015.txt");
 		client.keyPoolRefill();
 		client.keyPoolRefill(115);
 		client.listAccounts();
