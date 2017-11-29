@@ -35,8 +35,8 @@ public final class ResourceUtils {
 	
 	public static Properties getNodeConfig() throws IOException {
 		Properties nodeConfig = new Properties();
-//		InputStream inputStream = new BufferedInputStream(new FileInputStream("src/main/resources/node_config.properties"));
-                InputStream inputStream = new BufferedInputStream(new FileInputStream("node_config.properties"));
+		InputStream inputStream = new BufferedInputStream(new FileInputStream("src/main/resources/node_config.properties"));
+//                InputStream inputStream = new BufferedInputStream(new FileInputStream("node_config.properties"));
 		nodeConfig.load(inputStream);
 		inputStream.close();
 		return nodeConfig;
